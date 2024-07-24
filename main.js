@@ -76,3 +76,18 @@ const perguntas = [
         ]
     }
 ];
+
+let atual= 0;
+let perguntaAtual;
+let historiaFinal = "";
+
+function mostrarPergunta(){
+    if (atual >= perguntas.length){
+        mostrarResultado();
+        return;
+    }
+    perguntaAtual = perguntas[aual]:
+    caixaPerguntas.textContent = perguntaAtual.enunciado;
+    caixaAlternativas.textContent = "";
+    mostrarAlternativas();
+}
