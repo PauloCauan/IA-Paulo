@@ -9,87 +9,44 @@ const perguntas = [
     {
         enunciado: "Pergunta 1",
         alternativas: [
-            { 
+            {
                 texto: "Alternativa A",
-                afirmação: "afirmação da alternativa A"
+                afirmacao: "afirmacao da alternativa A."
             },
-            {   
+            {
                 texto: "Alternativa B",
-                afirmação: "afirmação da alternativa B"
+                afirmacao: "afirmacao da alternativa B."
             }
         ]
     },
-
     {
         enunciado: "Pergunta 2",
         alternativas: [
-            { 
+            {
                 texto: "Alternativa A",
-                afirmação: "afirmação da alternativa A"
+                afirmacao: "afirmacao da alternativa A."
             },
-            {   
+            {
                 texto: "Alternativa B",
-                afirmação: "afirmação da alternativa B"
-            }
-        ]
-    },
-
-    {
-        enunciado: "Pergunta 3",
-        alternativas: [
-            { 
-                texto: "Alternativa A",
-                afirmação: "afirmação da alternativa A"
-            },
-            {   
-                texto: "Alternativa B",
-                afirmação: "afirmação da alternativa B"
-            }
-        ]
-    },
-
-    {
-        enunciado: "Pergunta 4",
-        alternativas: [
-            { 
-                texto: "Alternativa A",
-                afirmação: "afirmação da alternativa A"
-            },
-            {   
-                texto: "Alternativa B",
-                afirmação: "afirmação da alternativa B"
-            }
-        ]
-    },
-
-    {
-        enunciado: "Pergunta 5",
-        alternativas: [
-            { 
-                texto: "Alternativa A",
-                afirmação: "afirmação da alternativa A"
-            },
-            {   
-                texto: "Alternativa B",
-                afirmação: "afirmação da alternativa B"
+                afirmacao: "afirmacao da alternativa B."
             }
         ]
     }
 ];
 
-let atual= 0;
+let atual = 0;
 let perguntaAtual;
 let historiaFinal = "";
 
-function mostrarPergunta(){
+function mostraPergunta(){
     if (atual >= perguntas.length){
-        mostrarResultado();
+        mostraResultado();t
         return;
     }
     perguntaAtual = perguntas[atual];
     caixaPerguntas.textContent = perguntaAtual.enunciado;
     caixaAlternativas.textContent = "";
-    mostrarAlternativas();
+    mostraAlternativas();
 }
 
 function mostraAlternativas(){
