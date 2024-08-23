@@ -7,27 +7,27 @@ const textoResultado = document.querySelector(".texto-resultado");
 
 const perguntas = [
     {
-        enunciado: "Pergunta 1",
+        enunciado: "Palmeiras tem mundial?",
         alternativas: [
             {
-                texto: "Alternativa A",
+                texto: "Não",
                 afirmacao: "afirmacao da alternativa A."
             },
             {
-                texto: "Alternativa B",
+                texto: "Não",
                 afirmacao: "afirmacao da alternativa B."
             }
         ]
     },
     {
-        enunciado: "Pergunta 2",
+        enunciado: "Tem ceteza?",
         alternativas: [
             {
-                texto: "Alternativa A",
+                texto: "Sim",
                 afirmacao: "afirmacao da alternativa A."
             },
             {
-                texto: "Alternativa B",
+                texto: "Sim",
                 afirmacao: "afirmacao da alternativa B."
             }
         ]
